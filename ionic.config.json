@@ -1,0 +1,7 @@
+{
+  "name": "pilot-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
