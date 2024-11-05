@@ -1,0 +1,41 @@
+ion-grid {
+    background-color: #f8f9fa; /* Color de fondo claro */
+    padding: 10px;
+  
+    ion-row {
+      margin: 0;
+      padding: 5px 0;
+      color: black;
+      
+      &:nth-child(odd) {
+        background-color: #e9ecef; /* Color de fondo alterno */
+      }
+      
+      &:nth-child(even) {
+        background-color: #ffffff; /* Color de fondo alterno */
+      }
+    }
+  }
+  
+  .airport-id {
+    font-weight: bold;
+    color: #007bff; /* Color para ID */
+  }
+  
+  .airport-callsign {
+    font-weight: bold;
+    color: #28a745; /* Color para Callsign */
+  }
+  
+  .airport-server {
+    color: #6c757d; /* Color para Server */
+  }
+  
+  .airport-start-time {
+    color: #dc3545; /* Color para Start Time */
+  }
+  
+  .loader {
+    left: 50%;
+    top: 50%;
+  }

@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Pilotos Conectados 🇲🇽 - ({{ totalMembers }})</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col><strong>ID</strong></ion-col>
+      <ion-col><strong>Callsign</strong></ion-col>
+      <ion-col><strong>Server</strong></ion-col>
+      <ion-col><strong>Start Time</strong></ion-col>
+    </ion-row>
+
+    <ion-row *ngFor="let member of members">
+      <ion-col class="airport-id">{{ member.id }}</ion-col>
+      <ion-col class="airport-callsign">{{ member.callsign }}</ion-col>
+      <ion-col class="airport-server">{{ member.server }}</ion-col>
+      <ion-col class="airport-start-time">{{ member.start | date:'short' }}</ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-spinner class="loader" *ngIf="!members.length"></ion-spinner> 
+</ion-content>
